@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans+Narrow:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #a1e6e3;
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  display: flex;
+  padding: 10px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 4vb;
+  font-style: normal;
+}
+
+.icon {
+  width: 5%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  gap: 30px;
+}
+
+textarea {
+  width: 500px;
+  height: 550px;
+  text-transform: lowercase;
+}
+
+.message_text {
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.message_encript {
+  background-color: #d7fffd;
+  resize: none;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-image: url(../img/imagen.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+.text_message {
+  resize: none;
+  outline: none;
+  border-radius: 10px;
+  border: none;
+  background-color: #d7fffd;
+  padding: 20px;
+  text-transform: lowercase;
+}
+
+.text_information {
+  display: block;
+  margin-left: calc(30% - 130px);
+}
+
+.buttons {
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 0.5%;
+  transition: all 0.5s ease;
+  margin-left: calc(30% - 130px);
+}
+
+.encrypt_button {
+  border: 10% solid;
+  background-color: #fafba4;
+  border-radius: 28px;
+  width: 230px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.decrypt_button {
+  width: 230px;
+  border: 10% solid;
+  background-color: #fafba4;
+  border-radius: 28px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.copy_button {
+  border: 15% solid;
+  background-color: #fafba4;
+  width: 230px;
+  height: 60px;
+  margin-left: 8%;
+  border-radius: 28px;
+  visibility: collapse;
+  cursor: pointer;
+}
+
+.message_not_found {
+  display: block;
+  font-size: 15px;
+  margin-left: 53vmax;
+  margin-top: -85px;
+  font-weight: 100;
+}
+
+.message_alert {
+  display: block;
+  margin-top: -0.5vmax;
+  margin-left: 57vmax;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: #f6f1e9;
+  text-align: center;
+  align-items: center;
+  font-size: 12px;
+  width: 100%;
+}
+
+.social {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon-social {
+  color: black;
+  font-size: 20px;
+}
+
+.icon-social:hover {
+  transform: translateY(-5px);
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador prueba 2</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/notifications.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/logo_1.png" alt="Icono de la página" class="icon">
+        <h1 class="title">Encriptador de texto</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="textarea">
+                <p class="message_text"> Mensaje Encriptado</p>
+                <textarea class="text_message" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+
+            <div class="textarea">
+                <p class="message_text"> Mensaje Desencriptado</p>
+                <textarea class="message_encript" readonly="readonly"></textarea>
+            </div>
+        </div>
+
+
+        <section class="section">
+            <div class="text_information">
+                <ion-icon size="medium" name="alert-circle-outline"></ion-icon><span> Solo letras minusculas y sin
+                    acento</span>
+            </div>
+
+            <div class="buttons">
+                <button class="encrypt_button" onclick="btnEncriptar()"> Encriptar</button>
+                <button class="decrypt_button" onclick="btnDesencriptar()"> Desencriptar</button>
+
+            </div>
+
+            <button class="copy_button" onclick="copyToClipboard()"> Copiar</button>
+            <h2 class="message_not_found" id="messageNotFound"><ion-icon size="medium"
+                    name="alert-circle-outline"></ion-icon><span> No se ha encontrado ningún mensaje</span></h2>
+            <p class="message_alert" id="messageAlert">Ingresa el texto por favor</p>
+        </section>
+
+        <div id="notification" class="notification">
+            <span id="notification-message">Mensaje de notificación</span>
+            <button id="close-notification" class="close-btn">&times;</button>
+        </div>
+
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="main.js"></script>
+</body>
+<footer class="footer">
+    <p class="text"> Desarrollado por Denuar Andrés Ramos</p>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/denuar/" class="icon-social" target="_blank"><ion-icon
+                name="logo-linkedin"></ion-icon> </a>
+        <a href="https://github.com/TheBarrelExploit" class="icon-social" target="_blank"><ion-icon
+                name="logo-github"></ion-icon></a>
+    </div>
+</footer>
+</html>

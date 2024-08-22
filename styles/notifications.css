@@ -1,0 +1,107 @@
+.notification {
+  display: none; /* Oculto por defecto */
+  position: fixed; /* Cambiado a fixed para que sea relativo a la ventana */
+  top: 20px;
+  right: 20px;
+  color: white;
+  width: 215px;
+  height: auto;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  opacity: 0;
+  transform: translateY(-20px);
+  white-space: nowrap;
+  max-width: 90%; /* Asegura que no se salga de la pantalla en dispositivos móviles */
+}
+
+.notification span {
+  margin-left: 15px;
+}
+
+.notification.show {
+  display: block;
+  opacity: 1;
+  animation: slideIn 0.5s forwards;
+}
+
+.notification.hide {
+  animation: slideOut 0.5s forwards;
+  pointer-events: none; /* Evita que se puedan hacer clics mientras desaparece */
+}
+
+.notification.success,
+.notification.error,
+.notification.warning {
+  width: auto; /* Permite que el ancho se ajuste al contenido */
+  height: auto; /* Permite que la altura se ajuste al contenido */
+  max-width: 90%;
+  white-space: normal; /* Permite que el texto se rompa en varias líneas si es necesario */
+}
+
+.close-btn {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 0 5px;
+}
+
+.close-btn:hover {
+  color: #ddd;
+}
+
+.notification.success {
+  background-color: #4caf50;
+} /* Éxito */
+.notification.error {
+  background-color: #f44336;
+} /* Error */
+.notification.warning {
+  background-color: #ff9800;
+} /* Advertencia */
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de salida */
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+/* Media Queries para dispositivos móviles */
+@media screen and (max-width: 600px) {
+  .notification {
+    top: 10px;
+    right: 10px;
+    width: auto; /* Permite que se ajuste al contenido */
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .close-btn {
+    margin-left: 5px;
+    font-size: 14px;
+  }
+}
