@@ -176,7 +176,7 @@
 @media (max-width: 400px) {
   .text_information {
     margin-left: calc(40% - 50px);
-    margin-top: -49vmax;
+    margin-top: calc(-60% - 190px);
     font-size: 12px;
     white-space: nowrap;
   }
@@ -186,7 +186,7 @@
 @media (max-width: 380px) {
   .text_information {
     margin-left: calc(40% - 50px);
-    margin-top: -62vmax;
+    margin-top: calc(-60% - 190px);
     font-size: 12px;
     white-space: nowrap;
   }
