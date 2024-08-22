@@ -125,7 +125,7 @@
   }
 
   .text_information {
-    margin-left: calc(40% - 100px);
+    margin-left: calc(40% - 50px);
     margin-top: -45vmax;
     font-size: 12px;
     white-space: nowrap;
@@ -171,4 +171,24 @@
   .footer {
     width: 100%;
   }
+}
+
+@media (max-width: 400px) {
+  .text_information {
+    margin-left: calc(40% - 50px);
+    margin-top: -49vmax;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+}
+
+@media (max-width: 380px) {
+  .text_information {
+    margin-left: calc(40% - 50px);
+    margin-top: -62vmax;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
 }
