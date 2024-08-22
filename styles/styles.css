@@ -158,15 +158,15 @@ textarea {
 
 .encrypt_button:hover{
   opacity: 0.8;
-  transform: scale(1.05);    
+  transform: scale(1.15);    
 }
 
 .decrypt_button:hover{
   opacity: 0.8;
-  transform: scale(1.05);  
+  transform: scale(1.15);  
 }
 
 .copy_button:hover{
   opacity: 0.8;
-  transform: scale(1.05);  
+  transform: scale(1.15);  
 }
