@@ -126,7 +126,7 @@
 
   .text_information {
     margin-left: calc(40% - 50px);
-    margin-top: -45vmax;
+    margin-top: calc(-60% - 180px);
     font-size: 12px;
     white-space: nowrap;
   }
