@@ -155,3 +155,18 @@ textarea {
 .icon-social:hover {
   transform: translateY(-5px);
 }
+
+.encrypt_button:hover{
+  opacity: 0.8;
+  transform: scale(1.05);    
+}
+
+.decrypt_button:hover{
+  opacity: 0.8;
+  transform: scale(1.05);  
+}
+
+.copy_button:hover{
+  opacity: 0.8;
+  transform: scale(1.05);  
+}
