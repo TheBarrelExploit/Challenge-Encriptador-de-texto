@@ -95,7 +95,7 @@ function hideOrShowElements(
   buttonCopy = "collapse",
   alertMessage = "visible"
 ) {
-  console.log(backgroundImage)
+  console.log(backgroundImage );
   message.value = "";
   botonCopiar.style.visibility = buttonCopy;
   messageNotFound.style.visibility = alertMessage;
