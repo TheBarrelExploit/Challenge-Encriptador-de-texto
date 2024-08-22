@@ -62,7 +62,7 @@ function copyToClipboard() {
   navigator.clipboard
     .writeText(messageEcript.value)
     .then(() => {
-      hideOrShowElements(backgroundImage = "url(img/imagen.png)");
+      hideOrShowElements(backgroundImage = "url(./img/imagen.png)");
       messageEcript.value = "";
       showNotification("¡Mensaje Copiado!", "success");
     })
